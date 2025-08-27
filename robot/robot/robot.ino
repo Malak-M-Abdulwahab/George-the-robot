@@ -1,8 +1,8 @@
 #define REMOTEXY_MODE__ESP32CORE_BLE
 #define REMOTEXY_BLUETOOTH_NAME "RemoteXY" // RemoteXY connection settings 
 #define MIC_PIN 4 // Microphone pin
-#define WIFI_SSID "WE_4D969C"
-#define WIFI_PASSWORD "n8149532"
+#define WIFI_SSID " "
+#define WIFI_PASSWORD " "
 #define TTS_MODEL 0
 #define AUDIO_FILE "/Audio.wav" // File of audio saved
 #define TTS_GOOGLE_LANGUAGE "en-IN"
@@ -81,8 +81,8 @@ struct
 #pragma pack(pop)
 
 Servo myServo;  // Create a Servo object
-const char* deepGramApiKey = "87bf1dbd4256f22f63e8bf6250c8c9ca530be220";
-const char* geminiApiKey = "AIzaSyCdNpLAP0o43Xfu1IqvjQxDElgpl39rxjQ";
+const char* deepGramApiKey = " ";
+const char* geminiApiKey = " ";
 String text;
 String filteredAnswer = "";
 String repeat;
@@ -246,7 +246,7 @@ void askGeorge() // Talk to our robot, George!
             // Read the actual response
             response = client.readString();
             parseResponse(response);
-          };cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;;;dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddl;;;;;;;;;;;;;l;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;dl;;;;llllllllllllllllllllllllllddddddddddl;;d;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;dddddldlddlddldldllld;;;llldldddddddddddddd;ld;lllllllllddddddddddddddd;ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddllllllr 
+          };
           else 
           {
             Serial.println("Connection failed!");
