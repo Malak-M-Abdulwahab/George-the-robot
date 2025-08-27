@@ -84,7 +84,7 @@ Servo myServo;  // Create a Servo object
 const char* deepGramApiKey = " ";
 const char* geminiApiKey = " ";
 String text;
-String filteredAnswer = "";
+String filteredAnswer = " ";
 String repeat;
 SimpleTimer Timer;
 float batteryVoltage;
