@@ -42,7 +42,25 @@ I hope the documentation is satisfactory!!
 
 ## RemoteXY
 
+To control our intricate little robot, we discovered a bluetooth/wifi connected application that we can use.
 
+I unfortunately don't have the app right now, as I am adding this read me a year after the completion of this project, but I will do my best to explain how we've used it.
+
+The mini app had a menu, including multiple options:
+- smoke detector: turned on the smoke detector and displayed its readings on the lcd screen
+- distance sensor: turned on the ultrasonic sensor and displayed its readings on the lcd screen
+- dance!: walk around in squiggly lines
+- walk: normal joy stick configurations
+- talk: connects to the internet, input a sentence, and the speaker says out loud the sentence
 
 ## Arduino IDE Code
 
+I won't go into much details, but I'll just explain our thought process through out the project.
+
+In the main loop, each button had a number, and we used it to access each page accordingly (since remotexy technically doesnt have pages).
+
+For the motors, since we are using a joy stick, we mapped each direction to apply into each of the motors for all the walking and dancing.
+
+The lcd screen prints Hi! I'm George ^^ as soon as the robot starts up. If you happen to use any of the other detectors the screen will switch to their output and back again once you're done.
+
+That is all mostly for the complicated uncommented parts of the code, the rest is pretty simple for anyone who has worked with arduino before.
